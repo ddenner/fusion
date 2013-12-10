@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "FusionWCF", "FusionWCF\FusionWCF.ccproj", "{5C1B8A5E-5162-48F3-A564-6733B59A454F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FusionWCFWebRole", "FusionWCFWebRole\FusionWCFWebRole.csproj", "{0312C802-391E-475C-AA99-6D4A920D9D1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C1B8A5E-5162-48F3-A564-6733B59A454F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1B8A5E-5162-48F3-A564-6733B59A454F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1B8A5E-5162-48F3-A564-6733B59A454F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1B8A5E-5162-48F3-A564-6733B59A454F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0312C802-391E-475C-AA99-6D4A920D9D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0312C802-391E-475C-AA99-6D4A920D9D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0312C802-391E-475C-AA99-6D4A920D9D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0312C802-391E-475C-AA99-6D4A920D9D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
