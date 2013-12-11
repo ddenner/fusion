@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="FusionServices" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="FusionSoapService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=fusionsoapservice;AccountKey=H7OuLupEIfuPeJbA2nkUzTn7ybRs8IjlbuKO/Yp8REnLJG38gmp34NksHUT5K4fmCfvWZjquDrZY2nhWzRiZlQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="ddenner" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHmadztLcn6cQW+cNUbK6SAwDQYJKoZIhvcNAQEBBQAEggEApM/0KsJ21T1rNr8z/N5w8fDv/gcMuHJW4PkFojscWUbqVsB8EkGQ1NlSMMttNHMbrkGdXZHzkH0sVvG8hHO1Ja5PjFriq8gZrUtqmNfgbqLTwtiHQwPu2JHwP03gJBB7NXimmKZ1ac9POyu3KO+9zzWOPaF9U0lF11EoDhYn4xubab+S2OcRpHYKitMRMK5VnlZiCWNfez9sTxAJhpDo0GPTCvJsW/0fYxVz9MR7irNHbfHJiNWxlZjgqFdtefHckvkF6u03XRiDLdL3d/fen4TEr2s/a21KsOVnSPD8REBAbWKzRTQFVTdTxkev+d39Dv7q8NnnDKI9kCvqPi6EyjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECFMIgMkKR0kfgBAbUSoe7SV1nfRA2qQzzegw" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-01-16T23:59:59.0000000-08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="79B43C9319862876AAE19DD429F6E6BD13C32E5E" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
