@@ -5,7 +5,7 @@ namespace FusionSoapService.Contracts.Data
     /// <summary>
     /// Defines the store for a special string type that should be a valid email address
     /// </summary>
-    [DataContract(Namespace = @"http://dougfusion.com")]
+    [DataContract]
     public class Phone : AbstractData
     {
         [DataMember()]

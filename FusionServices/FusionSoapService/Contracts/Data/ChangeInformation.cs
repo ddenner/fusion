@@ -7,7 +7,7 @@ namespace FusionSoapService.Contracts.Data
     /// Stores any data that tracks changes/updates of the data
     /// </summary>
     /// 
-    [DataContract(Namespace = @"http://dougfusion.com")]
+    [DataContract]
     public class ChangeInformation : AbstractData
     {
         [DataMember()]

@@ -3,7 +3,9 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://dougfusion.com/Imports">
       <xsd:import schemaLocation="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd0" namespace="http://dougfusion.com" />
+      <xsd:import schemaLocation="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Exceptions" />
       <xsd:import schemaLocation="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IFusionService_InsertUpdatePatient_InputMessage">
@@ -13,7 +15,7 @@
     <wsdl:part name="parameters" element="tns:InsertUpdatePatientResponse" />
   </wsdl:message>
   <wsdl:message name="IFusionService_InsertUpdatePatient_FusionServicesExceptionFault_FaultMessage">
-    <wsdl:part name="detail" element="tns:FusionServicesException" />
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Exceptions" name="detail" element="q1:FusionServicesException" />
   </wsdl:message>
   <wsdl:message name="IFusionService_GetPatient_InputMessage">
     <wsdl:part name="parameters" element="tns:GetPatient" />
@@ -22,7 +24,7 @@
     <wsdl:part name="parameters" element="tns:GetPatientResponse" />
   </wsdl:message>
   <wsdl:message name="IFusionService_GetPatient_FusionServicesExceptionFault_FaultMessage">
-    <wsdl:part name="detail" element="tns:FusionServicesException" />
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Exceptions" name="detail" element="q2:FusionServicesException" />
   </wsdl:message>
   <wsdl:portType name="IFusionService">
     <wsdl:operation name="InsertUpdatePatient">

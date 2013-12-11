@@ -61,6 +61,12 @@
     <None Include="Service References\FusionSoapService\FusionService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\FusionSoapService\FusionService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FusionSoapService\FusionService21.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\FusionSoapService\FusionSoapServiceSDK.FusionSoapService.Patient.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

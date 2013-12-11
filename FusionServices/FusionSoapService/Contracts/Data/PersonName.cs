@@ -5,7 +5,7 @@ namespace FusionSoapService.Contracts.Data
     /// <summary>
     /// All of the charactertistics that define who a humanbeing
     /// </summary>
-    [DataContract(Namespace = @"http://dougfusion.com")]
+    [DataContract]
     public class PersonName : AbstractData
     {
         [DataMember()]

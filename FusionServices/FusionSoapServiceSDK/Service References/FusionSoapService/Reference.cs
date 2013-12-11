@@ -15,7 +15,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="AbstractData", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="AbstractData", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(FusionSoapServiceSDK.FusionSoapService.Address))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(FusionSoapServiceSDK.FusionSoapService.SpatialData))]
@@ -51,7 +51,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Address", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Address", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     public partial class Address : FusionSoapServiceSDK.FusionSoapService.AbstractData {
         
@@ -154,7 +154,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SpatialData", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SpatialData", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     public partial class SpatialData : FusionSoapServiceSDK.FusionSoapService.AbstractData {
         
@@ -193,7 +193,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Phone", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Phone", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     public partial class Phone : FusionSoapServiceSDK.FusionSoapService.AbstractData {
         
@@ -216,7 +216,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PersonName", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PersonName", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     public partial class PersonName : FusionSoapServiceSDK.FusionSoapService.AbstractData {
         
@@ -255,7 +255,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="EmailAddress", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="EmailAddress", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     public partial class EmailAddress : FusionSoapServiceSDK.FusionSoapService.AbstractData {
         
@@ -278,7 +278,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ChangeInformation", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ChangeInformation", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     public partial class ChangeInformation : FusionSoapServiceSDK.FusionSoapService.AbstractData {
         
@@ -317,7 +317,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Patient", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Patient", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data")]
     [System.SerializableAttribute()]
     public partial class Patient : FusionSoapServiceSDK.FusionSoapService.AbstractData {
         
@@ -436,7 +436,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="FusionServicesException", Namespace="http://dougfusion.com")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="FusionServicesException", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Exceptions")]
     [System.SerializableAttribute()]
     public partial class FusionServicesException : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -501,14 +501,14 @@ namespace FusionSoapServiceSDK.FusionSoapService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://dougfusion.com/IFusionService/InsertUpdatePatient", ReplyAction="http://dougfusion.com/IFusionService/InsertUpdatePatientResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(FusionSoapServiceSDK.FusionSoapService.FusionServicesException), Action="http://dougfusion.com/IFusionService/InsertUpdatePatientFusionServicesExceptionFa" +
-            "ult", Name="FusionServicesException")]
+            "ult", Name="FusionServicesException", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Exceptions")]
         void InsertUpdatePatient(FusionSoapServiceSDK.FusionSoapService.Patient patient);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://dougfusion.com/IFusionService/InsertUpdatePatient", ReplyAction="http://dougfusion.com/IFusionService/InsertUpdatePatientResponse")]
         System.Threading.Tasks.Task InsertUpdatePatientAsync(FusionSoapServiceSDK.FusionSoapService.Patient patient);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://dougfusion.com/IFusionService/GetPatient", ReplyAction="http://dougfusion.com/IFusionService/GetPatientResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(FusionSoapServiceSDK.FusionSoapService.FusionServicesException), Action="http://dougfusion.com/IFusionService/GetPatientFusionServicesExceptionFault", Name="FusionServicesException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(FusionSoapServiceSDK.FusionSoapService.FusionServicesException), Action="http://dougfusion.com/IFusionService/GetPatientFusionServicesExceptionFault", Name="FusionServicesException", Namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Exceptions")]
         FusionSoapServiceSDK.FusionSoapService.Patient GetPatient(System.Guid patientId, int region);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://dougfusion.com/IFusionService/GetPatient", ReplyAction="http://dougfusion.com/IFusionService/GetPatientResponse")]

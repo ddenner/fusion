@@ -4,7 +4,7 @@ using FluentValidation.Results;
 
 namespace FusionSoapService.Contracts.Exceptions
 {
-    [DataContract(Namespace=@"http://dougfusion.com")]
+    [DataContract]
     public class FusionServicesException
     {
         [DataMember]

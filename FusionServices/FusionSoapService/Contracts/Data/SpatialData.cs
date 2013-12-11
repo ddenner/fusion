@@ -5,7 +5,7 @@ namespace FusionSoapService.Contracts.Data
     /// <summary>
     /// To allow for geo querying
     /// </summary>
-    [DataContract(Namespace = @"http://dougfusion.com")]
+    [DataContract]
     public class SpatialData : AbstractData
     {
         [DataMember()]

@@ -1,117 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://dougfusion.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:tns="http://dougfusion.com" elementFormDefault="qualified" targetNamespace="http://dougfusion.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data" />
   <xs:import schemaLocation="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:element name="InsertUpdatePatient">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://dougfusion.com" minOccurs="0" name="patient" nillable="true" type="q1:Patient" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data" minOccurs="0" name="patient" nillable="true" type="q1:Patient" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:complexType name="Patient">
-    <xs:complexContent mixed="false">
-      <xs:extension xmlns:q2="http://dougfusion.com" base="q2:AbstractData">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="HomeAddress" nillable="true" type="q2:Address" />
-          <xs:element minOccurs="0" name="HomePhone" nillable="true" type="q2:Phone" />
-          <xs:element minOccurs="0" name="Key" type="xs:int" />
-          <xs:element minOccurs="0" name="PatientId" type="ser:guid" />
-          <xs:element minOccurs="0" name="PatientName" nillable="true" type="q2:PersonName" />
-          <xs:element minOccurs="0" name="PrimaryEmail" nillable="true" type="q2:EmailAddress" />
-          <xs:element minOccurs="0" name="Tracking" nillable="true" type="q2:ChangeInformation" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element xmlns:q3="http://dougfusion.com" name="Patient" nillable="true" type="q3:Patient" />
-  <xs:complexType name="AbstractData">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:element xmlns:q4="http://dougfusion.com" name="AbstractData" nillable="true" type="q4:AbstractData" />
-  <xs:complexType name="Address">
-    <xs:complexContent mixed="false">
-      <xs:extension xmlns:q5="http://dougfusion.com" base="q5:AbstractData">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="GeoLocation" nillable="true" type="q5:SpatialData" />
-          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ZipCode" type="xs:int" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element xmlns:q6="http://dougfusion.com" name="Address" nillable="true" type="q6:Address" />
-  <xs:complexType name="SpatialData">
-    <xs:complexContent mixed="false">
-      <xs:extension xmlns:q7="http://dougfusion.com" base="q7:AbstractData">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Latitude" type="xs:float" />
-          <xs:element minOccurs="0" name="Longitude" type="xs:float" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element xmlns:q8="http://dougfusion.com" name="SpatialData" nillable="true" type="q8:SpatialData" />
-  <xs:complexType name="Phone">
-    <xs:complexContent mixed="false">
-      <xs:extension xmlns:q9="http://dougfusion.com" base="q9:AbstractData">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element xmlns:q10="http://dougfusion.com" name="Phone" nillable="true" type="q10:Phone" />
-  <xs:complexType name="PersonName">
-    <xs:complexContent mixed="false">
-      <xs:extension xmlns:q11="http://dougfusion.com" base="q11:AbstractData">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element xmlns:q12="http://dougfusion.com" name="PersonName" nillable="true" type="q12:PersonName" />
-  <xs:complexType name="EmailAddress">
-    <xs:complexContent mixed="false">
-      <xs:extension xmlns:q13="http://dougfusion.com" base="q13:AbstractData">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element xmlns:q14="http://dougfusion.com" name="EmailAddress" nillable="true" type="q14:EmailAddress" />
-  <xs:complexType name="ChangeInformation">
-    <xs:complexContent mixed="false">
-      <xs:extension xmlns:q15="http://dougfusion.com" base="q15:AbstractData">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="InsertDate" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element xmlns:q16="http://dougfusion.com" name="ChangeInformation" nillable="true" type="q16:ChangeInformation" />
   <xs:element name="InsertUpdatePatientResponse">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:complexType name="FusionServicesException">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="StackTrace" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element xmlns:q17="http://dougfusion.com" name="FusionServicesException" nillable="true" type="q17:FusionServicesException" />
   <xs:element name="GetPatient">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="patientId" type="ser:guid" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="patientId" type="q2:guid" />
         <xs:element minOccurs="0" name="region" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
@@ -119,7 +25,7 @@
   <xs:element name="GetPatientResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://dougfusion.com" minOccurs="0" name="GetPatientResult" nillable="true" type="q18:Patient" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data" minOccurs="0" name="GetPatientResult" nillable="true" type="q3:Patient" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

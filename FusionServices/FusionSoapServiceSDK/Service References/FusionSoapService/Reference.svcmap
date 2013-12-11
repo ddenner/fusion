@@ -22,11 +22,13 @@
     <MetadataSource Address="http://fusionsoapservice.cloudapp.net/fusionservice.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
+    <MetadataFile FileName="FusionService.xsd" MetadataType="Schema" ID="d3cd0a03-03dd-4e00-8b40-57905b5bac36" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="FusionService1.xsd" MetadataType="Schema" ID="5e94acbc-42f1-42a6-9566-878639c73950" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd0" />
     <MetadataFile FileName="FusionService.wsdl" MetadataType="Wsdl" ID="6cacbd00-66e5-4265-bc23-39d01a45f1a5" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?wsdl=wsdl0" />
     <MetadataFile FileName="FusionService1.wsdl" MetadataType="Wsdl" ID="6868af1c-f3e0-47ea-b0fb-a08f71249120" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?wsdl" />
-    <MetadataFile FileName="FusionService.xsd" MetadataType="Schema" ID="d3cd0a03-03dd-4e00-8b40-57905b5bac36" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="FusionService2.xsd" MetadataType="Schema" ID="82ab96cd-0a87-4027-b085-7bb7265afa4a" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd3" />
+    <MetadataFile FileName="FusionService21.xsd" MetadataType="Schema" ID="7393c795-447f-4a8c-bd14-2dfa80009cb6" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd2" />
     <MetadataFile FileName="FusionService.disco" MetadataType="Disco" ID="998ef68d-b77f-4385-a92b-ce2f3bab4db9" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?disco" />
-    <MetadataFile FileName="FusionService1.xsd" MetadataType="Schema" ID="5e94acbc-42f1-42a6-9566-878639c73950" SourceId="1" SourceUrl="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

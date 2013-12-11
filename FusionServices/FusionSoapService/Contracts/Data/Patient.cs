@@ -12,7 +12,7 @@ namespace FusionSoapService.Contracts.Data
     /// <summary>
     /// Defines the data that makes up a customer who is receiving medical services
     /// </summary>
-    [DataContract(Namespace = @"http://dougfusion.com")]
+    [DataContract]
     public class Patient : AbstractData, IFederatedKey
     {
         // unique identifier

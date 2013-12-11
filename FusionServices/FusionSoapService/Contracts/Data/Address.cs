@@ -11,7 +11,7 @@ namespace FusionSoapService.Contracts.Data
     /// Defines a physical location in the united states and has latitude / longitude so it can be mapped.
     /// </summary>
     /// 
-    [DataContract(Namespace = @"http://dougfusion.com")]
+    [DataContract]
     public class Address : AbstractData
     {
         [DataMember()]
