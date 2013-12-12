@@ -12,7 +12,7 @@ namespace FusionSoapService.Contracts.Mapper
 
         List<Patient> GetPatientsByName(PersonName name);
 
-        void InsertUpdatePatient(Patient patient);
+        Patient InsertUpdatePatient(Patient patient);
 
         void DeletePatient(Guid patientId);
     }

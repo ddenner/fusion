@@ -30,7 +30,7 @@
           <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="GeoLocation" nillable="true" type="tns:SpatialData" />
           <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ZipCode" type="xs:int" />
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

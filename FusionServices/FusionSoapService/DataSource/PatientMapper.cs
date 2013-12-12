@@ -37,7 +37,7 @@ namespace FusionSoapService.DataSource
                     Address2 = (string) reader[7],
                     City = (string) reader[8],
                     State = (string) reader[9],
-                    ZipCode = (int) reader[10],
+                    ZipCode = (string) reader[10],
                     GeoLocation = new SpatialData()
                     {
                         Latitude = Convert.ToSingle(reader[11]),
@@ -96,7 +96,7 @@ namespace FusionSoapService.DataSource
             throw new NotImplementedException();
         }
 
-        public void InsertUpdatePatient(Patient patient)
+        public Patient InsertUpdatePatient(Patient patient)
         {
             var command = new SqlCommand(string.Format("EXEC dbo.p_InsertUpdatePatient @PatientId, @Region," +
                                                           "@FirstName, @LastName, @Email, @Phone," +
@@ -147,13 +147,15 @@ namespace FusionSoapService.DataSource
                     command.Parameters.Add("@Address2", SqlDbType.NVarChar, 50).Value = patient.HomeAddress.Address2;
                 command.Parameters.Add("@City", SqlDbType.NVarChar, 50).Value = patient.HomeAddress.City;
                 command.Parameters.Add("@State", SqlDbType.Char, 2).Value = patient.HomeAddress.State;
-                command.Parameters.Add("@ZipCode", SqlDbType.Int).Value = patient.HomeAddress.ZipCode;
+                command.Parameters.Add("@ZipCode", SqlDbType.NVarChar, 10).Value = patient.HomeAddress.ZipCode;
 
                 command.Parameters.Add("@Latitude", SqlDbType.Float).Value = patient.HomeAddress.GeoLocation.Latitude;
                 command.Parameters.Add("@Longitude", SqlDbType.Float).Value = patient.HomeAddress.GeoLocation.Longitude;
 
                 OpenAndSetKey(patient.Key, "RegionFederation", "Region");
                 command.ExecuteNonQuery();
+
+                return patient;
             }
             finally
             {

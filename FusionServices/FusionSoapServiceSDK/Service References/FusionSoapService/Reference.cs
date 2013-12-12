@@ -71,7 +71,7 @@ namespace FusionSoapServiceSDK.FusionSoapService {
         private string StateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ZipCodeField;
+        private string ZipCodeField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string Address1 {
@@ -139,12 +139,12 @@ namespace FusionSoapServiceSDK.FusionSoapService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ZipCode {
+        public string ZipCode {
             get {
                 return this.ZipCodeField;
             }
             set {
-                if ((this.ZipCodeField.Equals(value) != true)) {
+                if ((object.ReferenceEquals(this.ZipCodeField, value) != true)) {
                     this.ZipCodeField = value;
                     this.RaisePropertyChanged("ZipCode");
                 }

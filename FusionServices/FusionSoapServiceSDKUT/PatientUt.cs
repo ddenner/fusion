@@ -27,7 +27,7 @@ namespace FusionSoapServiceSDKUT
             {
                 var patient = new Patient()
                 {
-                    PatientId = new Guid(),
+                    PatientId = Guid.NewGuid(),
                     Key = 0,
                     HomeAddress = new Address()
                     {
@@ -35,7 +35,7 @@ namespace FusionSoapServiceSDKUT
                         Address2 = "Suite 2",
                         City = "San Jose",
                         State = "CA",
-                        ZipCode = 90210,
+                        ZipCode = "90210",
                         GeoLocation = new SpatialData()
                         {
                             Latitude = float.Parse("21.3444"),
@@ -74,7 +74,7 @@ namespace FusionSoapServiceSDKUT
             {
                 var patient = new Patient()
                 {
-                    PatientId = new Guid(),
+                    PatientId = Guid.NewGuid(),
                     Key = 0,
                     HomeAddress = new Address()
                     {
@@ -82,7 +82,7 @@ namespace FusionSoapServiceSDKUT
                         Address2 = "Suite 2",
                         City = "San Jose",
                         State = "CA",
-                        ZipCode = 90210,
+                        ZipCode = "90210",
                         GeoLocation = new SpatialData()
                         {
                             Latitude = float.Parse("21.3444"),

@@ -23,7 +23,7 @@ namespace FusionSoapService.Contracts.Data
         [DataMember()]
         public string State { get; set; }
         [DataMember()]
-        public int ZipCode { get; set; }
+        public string ZipCode { get; set; }
         [DataMember()]
         public SpatialData GeoLocation { get; set; }
     }

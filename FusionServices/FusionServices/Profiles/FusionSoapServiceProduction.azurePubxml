@@ -18,5 +18,7 @@
     <AzureStorageAccountLabel>FusionSoapService</AzureStorageAccountLabel>
     <AzureStorageAccountName>fusionsoapservice</AzureStorageAccountName>
     <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
+    <EnableRemoteDebugger>False</EnableRemoteDebugger>
+    <RemoteDebuggerConnectorCertificateThumbprint>5937DA4CCB53BE8617F5B977CDBAE7B4F3318036</RemoteDebuggerConnectorCertificateThumbprint>
   </PropertyGroup>
 </Project>
