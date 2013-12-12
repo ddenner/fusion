@@ -16,9 +16,14 @@ namespace FusionRestService
 
             config.Routes.MapHttpRoute(
                 name: "GetPatient",
-                routeTemplate: "api/{controller}/{patientid}/{region}",
+                routeTemplate: "api/{controller}/getpatient/{patientid}/{region}",
                 defaults: new { region = 0 }
                 );
+
+            config.Routes.MapHttpRoute(
+                name: "AddUpdatePatient",
+                routeTemplate: "api/{controller}/addpatient"
+            );
 
             var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
             config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
