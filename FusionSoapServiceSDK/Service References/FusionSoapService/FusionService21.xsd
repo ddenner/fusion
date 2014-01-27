@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FusionSoapService.Contracts.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://fusionsoapservice.cloudapp.net/FusionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Patient">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HomeAddress" nillable="true" type="tns:Address" />
+          <xs:element minOccurs="0" name="HomePhone" nillable="true" type="tns:Phone" />
+          <xs:element minOccurs="0" name="Key" type="xs:int" />
+          <xs:element minOccurs="0" name="PatientId" type="ser:guid" />
+          <xs:element minOccurs="0" name="PatientName" nillable="true" type="tns:PersonName" />
+          <xs:element minOccurs="0" name="PrimaryEmail" nillable="true" type="tns:EmailAddress" />
+          <xs:element minOccurs="0" name="Tracking" nillable="true" type="tns:ChangeInformation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Patient" nillable="true" type="tns:Patient" />
+  <xs:complexType name="AbstractData">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="AbstractData" nillable="true" type="tns:AbstractData" />
+  <xs:complexType name="Address">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GeoLocation" nillable="true" type="tns:SpatialData" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="SpatialData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Latitude" type="xs:float" />
+          <xs:element minOccurs="0" name="Longitude" type="xs:float" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SpatialData" nillable="true" type="tns:SpatialData" />
+  <xs:complexType name="Phone">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Phone" nillable="true" type="tns:Phone" />
+  <xs:complexType name="PersonName">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PersonName" nillable="true" type="tns:PersonName" />
+  <xs:complexType name="EmailAddress">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailAddress" nillable="true" type="tns:EmailAddress" />
+  <xs:complexType name="ChangeInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="InsertDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ChangeInformation" nillable="true" type="tns:ChangeInformation" />
+</xs:schema>

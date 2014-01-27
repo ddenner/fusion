@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="FusionAPI" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="FusionRestService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="ddenner" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEH7/JbzXH4mnTKyYDXcqYuswDQYJKoZIhvcNAQEBBQAEggEAhCyp/vR+ceJmXg7Rwj3zJFW5kfjL9FcZm2KBbk8gbYwq7djTuVsXEAf3ZDTpMkeMPW4cgOMfuD/A/WmQBkYIzjkpcEgswU80FtXROmEgM1Nw7nfymOJJAuLXLAkfZW/aj2u2VuOlPbcIFbFgFSsuZ4PezxMzgcpn/v7/JL+Y6UMUBfi1eZ3Uzj7txZSd8yc3wS8uHjddqyXQyeUkRAIUi+IkZrUWOfB39lfTqwo64dnyuGCxhAYXkJ6iF1CCY4eDtYVgdIa5rz41s+MYydtpA5uO0QNI5f55KwVSuepWhUsmlAzyE8YqDrNN239w76hDCEOvjl0s3pBbqE3BwU4rQzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECHoZWhFdReywgBAl3yybGG9QT+lAIY8+9hG/" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-01-16T23:59:59.0000000-08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="A5D8013F0A1A83237BBA6FF9E3E2643645A3B511" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
